@@ -16,5 +16,6 @@ export class FormularioComponent {
   agregarPelicula(){
     console.log("Agregando película...");
     this.servicioPeliculas.agregarPelicula({...this.pelicula});
+    this.pelicula={};
   }
 }

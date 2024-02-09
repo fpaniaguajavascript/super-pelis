@@ -1,1 +1,4 @@
-<p>listado-pelis works!</p>
+<div id="listado">
+    <app-fila-peli *ngFor="let peliculaActual of listaPeliculas" [pelicula]="peliculaActual">
+    </app-fila-peli>
+</div>

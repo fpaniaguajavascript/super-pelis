@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Pelicula } from '../../interfaces/pelicula';
 
 @Component({
   selector: 'app-fila-peli',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './fila-peli.component.css'
 })
 export class FilaPeliComponent {
-
+  @Input() pelicula:Pelicula={};
 }

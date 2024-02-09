@@ -1,0 +1,8 @@
+#formulario {
+    width: 100%;
+    background-color: grey;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -7,3 +7,19 @@
         align-items: center;
         justify-content: space-between;
     }
+    .c1 {
+        width: 25%;
+    }
+    button {
+        padding: 1em 2em 1em 2em;
+        background-color: green;
+        color: white;
+        border: none;
+        margin-left: 2px;
+    }
+    button:hover {
+        padding: 1em 2em 1em 2em;
+        background-color: red; 
+        border: none;
+        cursor: no-drop;
+    }

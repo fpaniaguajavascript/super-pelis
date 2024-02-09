@@ -20,8 +20,10 @@ export class GestorpeliculasService {
     this.peliculas.push(nuevaPelicula);
     guardarPeliculas(this.peliculas);
   }
-  eliminarPelicula(titulo:string){
-    //TODO Programar
+  eliminarPelicula(titulo:string|undefined){
+    let indexABorrar = this.peliculas.findIndex(pelicula => pelicula.titulo===titulo);
+    this.peliculas.splice(indexABorrar, 1);
+    guardarPeliculas(this.peliculas);
   }
   modificarPelicula(titulo:string, peliculaModificada:Pelicula){
     //TODO Programar

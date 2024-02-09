@@ -1,12 +1,13 @@
 <div class="fila-peli">
-    <div>
+    <div class="c1">
         <span class="titulo">{{pelicula.titulo}}</span>
     </div>
-    <div>
+    <div class="c1">
         <span class="anyo">{{pelicula.anyo}}</span>
     </div>
-    <div class="div-imagen">
+    <div class="c1">
         <img src={{pelicula.imagen}} height="100px">
     </div>
     <div><button (click)="borrarPeli(pelicula.titulo)">Borrar</button></div>
+    <div><a [routerLink]="['/editar/'+pelicula.titulo]"><button>Editar</button></a></div>
 </div>

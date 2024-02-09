@@ -1,5 +1,12 @@
 <div class="fila-peli">
-    <span class="titulo">{{pelicula.titulo}}</span>
-    <span class="anyo">{{pelicula.anyo}}</span>
-    <img src={{pelicula.imagen}} width="100%">
+    <div>
+        <span class="titulo">{{pelicula.titulo}}</span>
+    </div>
+    <div>
+        <span class="anyo">{{pelicula.anyo}}</span>
+    </div>
+    <div class="div-imagen">
+        <img src={{pelicula.imagen}} height="100px">
+    </div>
+    <div><button (click)="borrarPeli(pelicula.titulo)">Borrar</button></div>
 </div>

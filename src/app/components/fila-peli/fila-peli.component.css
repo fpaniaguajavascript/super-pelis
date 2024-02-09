@@ -1,7 +1,9 @@
     .fila-peli {
+        display: flex;
         background-color: rgb(226, 223, 223);
-        width: 90%;
+        width: 80%;
         height: 100px;
-        margin: 0px 5% 0px 5%;
+        margin: 0px 10% 0px 10%;
+        align-items: center;
+        justify-content: space-between;
     }
-    

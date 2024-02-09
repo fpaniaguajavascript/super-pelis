@@ -10,4 +10,7 @@ import { Pelicula } from '../../interfaces/pelicula';
 })
 export class FilaPeliComponent {
   @Input() pelicula:Pelicula={};
+  borrarPeli(titulo:string | undefined){
+    console.log(titulo);
+  }
 }

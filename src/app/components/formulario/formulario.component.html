@@ -2,5 +2,6 @@
     <input type="text" placeholder="Título" [(ngModel)]="pelicula.titulo">
     <input type="text" placeholder="Imagen" [(ngModel)]="pelicula.imagen">
     <input type="number" placeholder="Año" [(ngModel)]="pelicula.anyo">
+    En cartelera:<input type="checkbox" [(ngModel)]="pelicula.enCartelera">
     <button (click)="agregarPelicula()">Agregar</button>
 </div>

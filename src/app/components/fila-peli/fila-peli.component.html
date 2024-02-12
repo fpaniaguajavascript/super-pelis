@@ -1,4 +1,4 @@
-<div class="fila-peli">
+<div class="fila-peli" [ngClass]="estilos">
     <div class="c1">
         <span class="titulo">{{pelicula.titulo}}</span>
     </div>
@@ -8,6 +8,10 @@
     <div class="c1">
         <img src={{pelicula.imagen}} height="100px">
     </div>
+    <div class="c1">
+        <span>{{pelicula.enCartelera ? "En cartelera" : "Descatalogada"}}</span>
+    </div>
     <div><button (click)="borrarPeli(pelicula.titulo)">Borrar</button></div>
     <div><a [routerLink]="['/editar/'+pelicula.titulo]"><button>Editar</button></a></div>
+    <div *ngIf="pelicula.enCartelera"><button>Alquilar</button></div>
 </div>

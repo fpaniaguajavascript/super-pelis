@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { FormularioComponent } from "./components/formulario/formulario.component";
 import { ListadoPelisComponent } from "./components/listado-pelis/listado-pelis.component";
 
@@ -8,7 +8,7 @@ import { ListadoPelisComponent } from "./components/listado-pelis/listado-pelis.
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, FormularioComponent, ListadoPelisComponent]
+    imports: [RouterOutlet, RouterLink, FormularioComponent, ListadoPelisComponent]
 })
 export class AppComponent {
   title = 'super-pelis';

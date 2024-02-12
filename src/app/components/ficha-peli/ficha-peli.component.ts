@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, RouterModule, Routes } from '@angular/router';
+import { Pelicula } from '../../interfaces/pelicula';
+import { GestorpeliculasService } from '../../services/gestorpeliculas.service';
 
 @Component({
   selector: 'app-ficha-peli',
@@ -10,12 +12,11 @@ import { ActivatedRoute, RouterModule, Routes } from '@angular/router';
 })
 export class FichaPeliComponent {
   private titulo:string="";
-  constructor(private ar:ActivatedRoute){
-
-  }
-  ngOnInit():void {
+  public pelicula:Pelicula|undefined;
+  constructor(private ar:ActivatedRoute, private gp:GestorpeliculasService){
     this.ar.params.subscribe(params=>{
       this.titulo = params['titulo'];
+      this.pelicula = this.gp.getPelicula(this.titulo);
       console.log(this.titulo);
     });
   }

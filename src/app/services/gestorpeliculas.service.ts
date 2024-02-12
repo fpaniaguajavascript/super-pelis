@@ -28,6 +28,9 @@ export class GestorpeliculasService {
   modificarPelicula(titulo:string, peliculaModificada:Pelicula){
     //TODO Programar
   }
+  getPelicula(titulo:string) : Pelicula | undefined {
+    return this.peliculas.find(pelicula => pelicula.titulo===titulo);
+  }
 }
 function guardarPeliculas(peliculas:Pelicula[]){
   localStorage.setItem("peliculas",JSON.stringify(peliculas));
